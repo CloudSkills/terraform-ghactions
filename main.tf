@@ -41,7 +41,7 @@ resource "azurerm_subnet" "subnet" {
 }
 
 module "server" {
-  source = "./modules/terraform-azure-wsserver"
+  source = "./modules/terraform-azure-server"
 
   subnet_id = azurerm_subnet.subnet.id
   resource_group_name = azurerm_resource_group.rg.name
