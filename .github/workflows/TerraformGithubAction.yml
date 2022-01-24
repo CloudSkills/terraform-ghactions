@@ -36,7 +36,7 @@ jobs:
          
       
       - name: Build Terraform State
-        run: chmod +x ./tfstate.sh && ./tfstate.sh
+        run: chmod +x ./tfstate.sh && ./tfstate.sh ${{env.AZURE_STORAGE}}
       - name: HashiCorp - Setup Terraform
         uses: hashicorp/setup-terraform@v1.2.1
       - name: Terraform Init
