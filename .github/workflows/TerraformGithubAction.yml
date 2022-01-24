@@ -22,6 +22,7 @@ jobs:
    env: 
        ARM_TENANT_ID: '4b272702-269b-4016-94d0-a8ef19cf5e22'
        ARM_SUBSCRIPTION_ID: '72596214-53a1-4131-8376-84ea4492fd6d'
+       ARM_CLIENT_ID: '83bece55-fca0-4f12-b52e-aa72a2a00fac'
        ARM_CLIENT_SECRET: ${{secrets.ARM_CLIENT_SECRET}}
        AZURE_STORAGE: 'terraformdemo5234232' 
     # Steps represent a sequence of tasks that will be executed as part of the job
