@@ -32,6 +32,8 @@ jobs:
         uses: Azure/login@v1.4.3
         with:
          creds: ${{secrets.AZURE_CREDENTIALS}}
+         
+         
       
       - name: Build Terraform State
         run: chmod +x ./tfstate.sh && ./tfstate.sh
