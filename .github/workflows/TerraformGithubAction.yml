@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Azure Login
         uses: Azure/login@v1.4.3
-         with:
+        with:
          creds: ${{secrets.AZURE_CREDENTIALS}}
       
       - name: Build Terraform State
